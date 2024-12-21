@@ -94,26 +94,3 @@ int main()
 
 }
 
-// we can increase linked list size whenever it is need ......
-
-//
-
-/*int main()
-{
-    int arr[]= {1,2,3,4,5};
-    node *head=NULL;
-    head=  linked_begin(arr,5,0,NULL);
-
-
-// delete first node in the list of the list......
-    if(head!= NULL)
-    {
-        node *temp=head;
-        head=head->next;
-        delete temp;
-        cout<<"first node deleted ";
-
-    }
-
-}*/
-
