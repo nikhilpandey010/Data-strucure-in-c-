@@ -1,3 +1,4 @@
+// Merge sort.....
 #include<iostream>
 using namespace std;
 void mergeing(int arr[],int start,int end,int mid)
