@@ -1,4 +1,7 @@
-// REVERSE LINKED LIST USING VECTOR
+//Given the head of a singly linked list, return the middle node of the linked list.
+
+//If there are two middle nodes, return the second middle node.
+
 #include<iostream>
 #include<vector>
 using namespace std;
@@ -32,28 +35,36 @@ node* linked_node(int arr[],int n,int index)
 
   }
 
+
+node* middle_list(node* head)
+{
+    node* fast=head,*slow=head;
+
+    while(fast->next != NULL && fast!= NULL)
+    {
+        fast=fast->next->next;
+        slow=slow->next;
+
+    }
+
+    return slow;
+
+}
+
+
 int main()
 {
     int arr[]={1,2,3,4,5,6};
     int size = sizeof(arr)/sizeof(arr[0]);
-    vector<int>ans;
     node *head=NULL;
-    head= linked_node(arr,size,0);
-    node *temp=head;
+    head = linked_node(arr,size,0);
 
-    while(temp)
-    {
-       ans.push_back(temp->data);
-       temp=temp->next;
+    node *middle=middle_list(head);
 
-    }
-
-    temp=head;
-    for(int i=ans.size()-1;i>=0;i--)
-    {
-        temp->data=ans[i];
-        cout<<temp->data<<" ";
-        temp=temp->next;
-    }
-
+    cout<<middle->data;
 }
+
+// not running.....
+
+
+
