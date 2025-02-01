@@ -1,3 +1,4 @@
+// STACK INBUILT FUNCTION
 #include<iostream>
 using namespace std;
 #include<stack>
@@ -9,7 +10,7 @@ int main()
     while(true)
     {
       int n;
-      cout<<"Enter [1] for PUSH /  [2] for POP / [3] for DISPLAY / [4] for EXIT"  ;
+      cout<<"Enter [1] for PUSH /  [2] for POP / [3] for DISPLAY / [4] for EXIT "  ;
       cin>>n;
       if(n == 1)
       {

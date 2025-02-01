@@ -1,4 +1,4 @@
-//delete node (not push on git hub )
+//delete node
 #include<iostream>
 using namespace std;
 class node
